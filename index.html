@@ -5,12 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="./sass/style.css">
+
+
+    <title>Recipe Page In Bootstrap</title>
 </head>
 <body>
+    <!-- Nav Bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success" style="--bs-bg-opacity: .5;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">&#9790;rescent &#9790;ooking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar End -->
+      
+    <!-- Jumbotron Start -->
+    <div class="jumbotron jumbotron-fluid text-center my-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">This is my <s>first</s> updated <s>HTML</s> recipe page!</h1>
+            <p class="lead">Seems like things with Bootstrap are going pretty well so far</p>
+        </div>
+    </div>
+    <!-- Jumbotron End -->
+
+    <!-- Recipe Intro Start -->
+    <div class="container">
+        <div class="row mx-auto">
+            <div class="col">
+                <h5>Going to switch up the recipe though.</h5>
+                <hr class="mt-0">
+                <p2>We're going to borrow one of my favorite recipes from <a href="https://www.damndelicious.net">Damn Delicious</a>. I like it because it's fast, easy, and damn if it doesn't taste delicious. This is the part where those bloggers tell those feel good stories about how they came to create their recipe. Usually something about how they were on some fancy trip--bloggers are always travelling, you know--to Korea and they tasted the wonderful flavors and experienced the culture (wait...do people visit Korea?) and they wanted to replicate those flavors at home to fit their busy schedule of more trips and delicious food creating. I don't have stories like that. But, I did find this recipe searching for fast, easy weeknight meals and it DELIVERS!</p2>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe Intro End -->
+
+    <!-- Recipe Image Start -->
+    <div class="container mx-auto px-5">
+        <div class="row justify-content-center">
+                <img src="https://s23209.pcdn.co/wp-content/uploads/2013/07/IMG_9111edit1-360x360.jpg" class="img-fluid m-3 shadow px-0 mb-5" alt="Ground Beef Bulgolgi" style="max-width: 65%">
+        </div>
+    </div>
+    <!-- Recipe Image End -->
     
+    <!-- Recipe Ingredients List Start -->
+    <div class="container">
+        <div class="row">
+            <h5 class="mb-2">
+                Get your stuff together
+            </h5>
+            <hr class="mt-0">
+            <p class="mb-0">
+                Here's a list of the ingredients you need to make this scumdiddillyump-dish.
+            </p>
+        </div>
 
+        <!-- Ingredient Alert Start -->
+        <div class="row">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </symbol>
+                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                </symbol>
+                <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </symbol>
+            </svg>
+            <div class="alert alert-warning d-flex align-items-center justify-content-evenly mt-2 shadow" role="alert">
+                <svg class="bi flex-shrink-0 me-3" width="50" height="50" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                <div>
+                    <p class="my-0 py-0">
+                        <small style="font-variant: small-caps;">
+                            <b>PLEASE NOTE:</b>
+                        </small>
+                    </p>
+                    <hr class="my-0 py-0">
+                    <p class="my-0 py-0">
+                        <small style="font-variant: small-caps;">
+                            SESAME SEEDS ARE ALSO A LISTED INGREDIENT ON THE MAIN RECIPE,</small>
+                        </small>
+                        <small>
+                            but it made my columns uneven and I just couldn't hang so I'm leaving this alert instead.
+                        </small>
+                    </p>
+                </div>
+                <svg class="bi flex-shrink-0 ms-3" width="50" height="50" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            </div>
+        </div>
+        <!-- Ingredient Alert End -->
 
+        <div class="row mb-4">
+            <div class="col">
+                <ul>
+                    <li>
+                        1/4 c brown sugar, packed
+                    </li>
+                    <li>
+                        1/4 c reduced sodium soy sauce
+                    </li>
+                    <li>
+                        2 tsp sesame oil
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        1/2 tsp crushed red-pepper flakes
+                    </li>
+                    <li>
+                        1/4 tsp ground ginger
+                    </li>
+                    <li>
+                        1 tbsp vegetable oil
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        3 clove garlic, minced
+                    </li>
+                    <li>
+                        1 pound ground beef
+                    </li>
+                    <li>
+                        2 green onions, thinly sliced
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe Ingredient List End -->
+
+    <!-- Recipe Directions Start -->
+    
+    <div class="container">
+        <div class="row">
+            <h5 class="mb-1 pb-0">
+                If I can do it, you can do it! Let's get cooking!
+            </h5>
+        </div>
+        <hr class="mt-1">
+        <div class="row">
+            <div class="col">
+                <ol style="margin-top:0px;">
+                    <li>
+                        In a small bowl, whisk together brown sugar, soy sauce, sesame oil, red pepper flakes and ginger.
+                    </li>
+                    <li>
+                        Heat vegetable oil in a large skillet over medium-high heat.
+                    </li>
+                    <li>
+                        Add garlic and cook, stirring constantly until fragrant, about 1 minute.
+                    </li>
+                    <li>
+                        Add ground beef. Crumble and cook until browned, about 3-5 minutes. Drain excess fat.
+                    </li>
+                    <li>
+                        Stir in soy sauce mixture and green onions until well combined, allowing to simmer until heated through, about 2 minutes.
+                    </li>
+                    <li>
+                        Serve immediately, garnished with green onions and sesame seeds, if desired. 
+                    </li>
+                    <li>
+                        Devour the delicious meal you just made in no time at all.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h5>For reference, here's a look at the original project (yes I added this while doing the coding warm-up):</h5>
+        </div>
+        <div class="row">
+            <embed src="https://moonbuddy.github.io/html-basics-exercise/" type="text/html"/>
+        </div>
+        
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
